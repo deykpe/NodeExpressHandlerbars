@@ -10,3 +10,5 @@ var connection = mysql.createConnection({
 connection.connect(function(error) {
     console.log('server running on port 8080')
 })
+
+module.exports = connection
