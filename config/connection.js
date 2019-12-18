@@ -4,11 +4,11 @@ var connection = mysql.createConnection({
     port: 3306,
     user: 'root',
     password: '2890768@Bc',
-    database: 'food'
+    database: 'burgers_db'
 })
 
 connection.connect(function(error) {
-    console.log('server running on port 8080')
+    console.log('database connected')
 })
 
 module.exports = connection

@@ -10,9 +10,13 @@ app.set("view engine", "handlebars"); 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); 
 
+var routes = require('./controllers/burgers_controller')
+app.use(routes)
+
 app.listen(port, function(){
     console.log('port 8080 is working')
 });
+
 
 
 
